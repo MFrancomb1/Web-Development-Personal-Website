@@ -13,24 +13,30 @@
         <link rel="stylesheet" href="css/foundation.css">
     </head>
     <body>
-        <div class="off-canvas-wrapper">
 
-            <!-- This div for menu or off-canvas content-->
-            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-                <!--Close button-->
-                <button class="close-button" aria-label="Close menu" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <!-- Menu Content -->
-                <ul class="vertical menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="fun.html">Fun</a></li>
-                </ul>
-            </div>
+        <div class="off-canvas-wrapper">
 
             <!--Page Content-->
             <div class="off-canvas-content" data-off-canvas-content>
+
+                <!-- Responsive title bar for page navigation-->
+                <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                    <div class="title-bar-title">Menu</div>
+                </div>
+                <div class="top-bar" id="example-menu">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li class="menu-text">Michael Francomb</li>
+                            <li><a href="index.html"><img src="assets/homesmall.png">Home</a></li>
+                            <li><a href="resume.html"><img src="assets/cvsmall.png">Resume</a></li>
+                            <li><a href="fun.html"><img src="assets/partysmall.png">Fun</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-bar-right">
+                    </div>
+                </div>
+
                 <!-- main content within a 'grid-container'-->
                 <div class="grid-container">
                     <!-- 'grid-x represents a row'-->
@@ -40,9 +46,6 @@
                             Describe the purpose of each project and the work you did
                             Include at least one photo for each project</div>
                         <div class="small-2 large-2" style="background-color: #555500 ">__</div>
-                    </div>
-                    <div class="grid-x grid-padding-x">
-                        <button type="button" class="cell large large-auto button" data-toggle="offCanvas">Navigation Menu</button>
                     </div>
                 </div>
             </div>

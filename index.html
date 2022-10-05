@@ -9,47 +9,55 @@
 <body>
     <div class="off-canvas-wrapper">
         <!-- Your menu or Off-canvas content goes here -->
-        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-            <!-- Close button -->
-            <button class="close-button" aria-label="Close menu" type="button" data-close>
-                <span aria-hidden="true">&times;</span>
-            </button>
-
-            <!-- Menu -->
-            <ul class="vertical menu">
-                <li><a href="#">Foundation</a></li>
-                <li><a href="#">Dot</a></li>
-                <li><a href="#">ZURB</a></li>
-                <li><a href="#">Com</a></li>
-                <li><a href="#">Slash</a></li>
-                <li><a href="#">Sites</a></li>
-            </ul>
-        </div>
         <!-- Your page content lives here -->
         <div class="off-canvas-content" data-off-canvas-content>
+
+            
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                <div class="title-bar-title">Menu</div>
+            </div>
+            <div class="top-bar hide-for-medium" id="example-menu">
+                <div class="top-bar-left">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li class="menu-text">Michael Francomb</li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="fun.html">Fun</a></li>
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                </div>
+            </div>
+
             <!-- main content within a `grid-container` -->
             <div class="grid-container">
                 <!-- `grid-x` represents a row -->
-                <div class="grid-x grid-padding-x">
-                    <div class="cell small-6 large-4" style="background-color: #ADD8E6;">Small 6 / Large 4</div>
-                    <div class="cell small-6 large-8" style="background-color: #90EE90;">Small 6 / Large 8</div>
+                <div class="grid-x">
+                    <div class="cell small-auto" style="padding: 1.25em 0em">
+                        <div class="callout large primary text-center ">
+                            <img src="data:image/jpeg;base64,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">
+                            <h3 style="padding-top: 1em;">Michael Francomb's Personal Website</h3>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="grid-x grid-padding-x">
-                    <div class="cell large-auto" style="background-color: #ADD8E6;"><a href='fun.html'>Fun</a></div>
-                    <div class="cell large-auto" style="background-color: #90EE90;"><a href='projects.html'>Projects</a></div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;"><a href='resume.html'>Resume</a></div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Four</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Five</div>
+                <div class="grid-x align-center">
+                    <div class="cell small-8 text-center" style="padding: 1.25em 1em">
+                        <p>
+                            <span style="font-size:1.2em; font-weight: bold; margin-left: 40px;">  Welcome</span> to the website of Michael Francomb! I am a computer science student studying at the University of 
+                            St. Thomas in Saint Paul Minnesota. I have lived in the twin cities my whole life, and currently reside in beautiful Northeast Minneapolis. Learn more about me and my work by clicking the icons down below!
+                        </p>
+                    </div>
                 </div>
-                
                 <div class="grid-x grid-padding-x">
-                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+                    <div class="cell small-12 large-4 text-center" style=""><a href="projects.html"><img class="thumbnail" src="assets/project(freepik).png" alt="Projects" style="height:50%;"></a><br>Projects</div>
+                    <div class="cell small-12 large-4 text-center" style=""><a href="resume.html"><img class="thumbnail" src="assets/cv.png" alt="Resume" style="height:50%;"></a><br>Resume</div>
+                    <div class="cell small-12 large-4 align-center text-center" style=""><a href="fun.html"><img class="thumbnail" src="assets/party.png" alt="Fun Stuff" style="height:50%;"></a><br>Fun Stuff</div>
                 </div>
             </div>
         </div>
     </div>
-
+    <a href="https://www.flaticon.com/free-icons/project" title="project icons" style="font-size:12px;">Icons by Freepik - Flaticon</a>
     <!-- include before closing <body> tag -->
     <script src="js/vendor.js"></script>
     <script src="js/foundation.js"></script>

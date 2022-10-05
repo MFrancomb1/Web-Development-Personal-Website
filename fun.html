@@ -10,61 +10,35 @@
         <title>Fun Stuff</title>
         <link rel="stylesheet" href="css/foundation.css">
     </head>
-    <body>
+    <body style="background-color: indigo;">
         <div class="off-canvas-wrapper">
-
-            <!-- This div for menu or off-canvas content-->
-            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-                <!--Close button-->
-                <button class="close-button" aria-label="Close menu" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <!-- Menu Content -->
-                <ul class="vertical menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-            </div>
 
             <!--Page Content-->
             <div class="off-canvas-content" data-off-canvas-content>
 
-
-                <div class="top-bar" style="color: blue;">
+                <!-- Responsive title bar for page navigation-->
+                <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                    <div class="title-bar-title">Menu</div>
+                  </div>
+                  <div class="top-bar" id="example-menu">
                     <div class="top-bar-left">
                       <ul class="dropdown menu" data-dropdown-menu>
-                        <li class="menu-text">Site Title</li>
-                        <li style="background-color: blue;">
-                          <a href="#">One</a>
-                          <ul class="menu vertical">
-                            <li><a href="#">One</a></li>
-                            <li><a href="#">Two</a></li>
-                            <li><a href="#">Three</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li class="menu-text">Michael Francomb</li>
+                        <li><a href="index.html"><img src="assets/homesmall.png">Home</a></li>
+                        <li><a href="projects.html"><img src="assets/projectsmall.png">Projects</a></li>
+                        <li><a href="resume.html"><img src="assets/partysmall.png">Resume</a></li>
                       </ul>
                     </div>
                     <div class="top-bar-right">
                     </div>
                   </div>
-                <div class="grid-x">
-                    <div class="cell" style="background-color: grey; padding: 18px 2px">full width</div>
-                </div>
 
 
                 <!-- main content within a 'grid-container'-->
-                <div class="grid-container full">
+                <div class="grid-container">
                     <!-- 'grid-x represents a row'-->
                     <div class="grid-x">
-                        <div class="cell small-2 medium-6 large-2" style="background-color: #555500 ">__</div>
-                        <div class="cell small-8 large-8" style="background-color: #888800 ">Tell something interesting about yourself (e.g. hobbies, aspirations, your pets, etc.) Include media (images, videos, and/or links)</div>
-                        <div class="small-2 large-2" style="background-color: #555500 ">__</div>
-                    </div>
-                    <div class="grid-x">
-                        <button type="button" class="cell large large-auto button" data-toggle="offCanvas">Navigation Menu</button>
                     </div>
                 </div>
             </div>
