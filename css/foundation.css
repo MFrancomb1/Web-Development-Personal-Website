@@ -69,6 +69,7 @@ sup {
   top: -0.5em; }
 
 img {
+  background-color: #388087;
   border-style: none; }
 
 button,
@@ -3202,7 +3203,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .callout > :last-child {
     margin-bottom: 0; }
   .callout.primary {
-    background-color: #d7ecfa;
+    background-color: #badfe7;
     color: #0a0a0a; }
   .callout.secondary {
     background-color: #eaeaea;
@@ -5584,5 +5585,12 @@ html.is-reveal-open {
     .hide-for-landscape,
     .show-for-portrait {
       display: block !important; } }
+
+ .round-borders {
+  border: 2px solid;
+  border-radius:75px;
+  padding: 5px;
+
+ }
 
 /*# sourceMappingURL=foundation.css.map */
