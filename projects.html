@@ -9,7 +9,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fun Stuff</title>
+        <title>Michael Francomb - Projects</title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
         <link rel="stylesheet" href="css/foundation.css">
     </head>
     <body style="background-color: #388087;">
@@ -44,21 +45,30 @@
                         <div class="cell small-auto" style="padding: 1.25em 0em">
                             <div class="callout large primary text-center round-borders" style="margin-bottom: 1em;">
                                 <h1>Projects</h1>
-                                <h5 class="subheader">This is a showcase of projects that I have worked on. For the rest of my portfolio, visit my <a href="https://github.com/MFrancomb1/">Github</a>.</h5>
+                                <h5 class="subheader">This is a showcase of projects that I have worked on. For the rest of my portfolio, visit my <a href="https://github.com/MFrancomb1/" target="_blank">Github</a>.</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-x align-center" style="padding: 1em 0em">
-                        <div class="cell" style="background-color: #345678;">Computer Graphics: <br>
-                                
+                    <div class="grid-x align-center round-borders" style="padding: 1em 0em; background-color: #f6f6f2; margin: 5em 1em;">
+                        <div class="cell small-6 medium-6 align-center round-borders" style="background-color: #6fb3b8; margin-bottom:1em;">Computer Graphics:</div> 
+                        <div class="cell small-8 show-for-small-only"><img class="round-borders" src="assets/cgshading.png"></div>
+                        <div class="cell small-8 round-borders" style="margin: 1em 0em;">
+                            <p style="margin: 4%;">In CISC 420 I worked with the JavaScript and the WebGL API to make some interesting demonstrations of browser based 3d graphics. Pictured here are examples of the different types illumination and shading of 3d models. Please visit my demo and try it out for yourself <a href="https://mfrancomb1.github.io/cg-illuminationshading/" target="_blank">HERE</a>!</p>
                         </div>
+                        <div class="cell medium-4 show-for-medium"><img  class="round-borders" src="assets/cgshading.png" style="margin: 2em 0em;"></div>
+                        <div class="cell small-8 show-for-small-only"><img class="round-borders" src="assets/3dprojections.png"></div>
+                        <div class="cell small-8 round-borders" style="margin: 1em 0em;">
+                            <p style="margin: 4%;">Another project that I worked on in CISC 420, This time using the HTML Canvas 2D API to project and animate the 3D images in the browser. It's not as colorful as the above project, the purpose of this prohect was to understand the mathematics that allow us to display 3D objects on a 2D screen. Please check out this demo <a href="https://pokkefe.github.io/cg-3dprojections/" target="_blank">HERE!</a> </p>
+                        </div>
+                        <div class="cell medium-4 show-for-medium"><img class="round-borders" src="assets/3dprojections.png" style="margin: 2em 0em;"></div>
                     </div>
-                    <div class="grid-x text-center align-center" style="padding: 1em 0em">
-                        <div class="cell" style="background-color: #234567;">Creative Coding:</div>
-                    </div>
-                    <div class="grid-x  text-right align-center" style="padding: 1em 0em">
-                        <div class="cell" style="background-color: #123456;">Writing</div>
-                    </div>
+                    <div class="grid-x text-center align-center round-borders" style="padding: 1em 0em; background-color: #f6f6f2; margin: 5em 1em;">
+                        <div class="cell small-8 medium-6 round-borders" style="background-color: #badfe7;">Creative Coding:</div>
+                        <div class="cell small-8 round-borders" style="margin: 1em 0em;">
+                            <p style="margin: 4%;">In CISC 298 we explored how a coder can express themselves createvely. Here is one of the projects I worked on, using JavaScript and P5JS to create art using perlin noise function to introduce a somewhat controlled randomness as the object streak across the screen. If you want to experience this visualization in fullscreen,<a href="perlin.html" target="_blank">CLICK HERE</a> to open a new tab.</p>
+                        </div>
+                        <div id="canv" class="cell small-10 align-center round-borders" style="background-color: #388087; border-radius: 50px;"><script src="assets/perlin.js"></script></div>
+                    </div>  
                 </div>
             </div>
 
